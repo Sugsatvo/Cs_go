@@ -137,7 +137,7 @@ section{
 .titulos{
     font-family: 'JD Neos', sans-serif;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 5rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-decoration: none;
@@ -172,5 +172,67 @@ section{
     font-family: 'JD Neos', sans-serif;
     font-weight: 400;
     color: #8f9fb4;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+}
+@view-transition{
+    navigation: auto;
+}
+
+::view-transition-group(*){
+    animation-duration: 1s
+}
+.campFoto::before{
+    background-image: url(imagens/campFoto.jpeg);
+    filter: blur(7px); 
+}
+.campFoto{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 2rem;
+    padding-bottom: 4rem;
+}
+.campHero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 4rem;
+}
+.campHerofoto,
+.campHerofoto2 {
+    width: 40%;
+    height: 20%;
+    position: relative;
+    overflow: hidden;
+    background-image: none;
+}
+
+.campHerofoto::before,
+.campHerofoto2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+.campHerofoto::before{
+    background-image: url(imagens/campFoto1.jpg);
+}
+
+.campHerofoto2::before{
+    background-image: url(imagens/campFoto.avif);
+}
+.campTexto{
+    font-size: 2rem;
+    color: #f8f9fb;
+    padding: 1rem;
 }
