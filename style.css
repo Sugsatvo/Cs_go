@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'CS Regular';
+    src: url(fontes/cs_regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JD Neos';
+    src: url(fontes/JdNeos.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 2rem;
+    background: linear-gradient(to bottom, #3a4652, #23292f);
+    border-bottom: 3px solid transparent;
+    border-image:#d98b3c;
+    min-height: 3.2rem;
+    width: 100vw;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 1.5rem;
+}
+.nav-botao {
+    font-family: 'JD Neos', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #cfd8e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.1rem 0.5rem;
+    position: relative;
+    transition: color 0.2s ease;
+}
+.nav-botao::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: #bf8f15;
+    opacity: 0;
+    transform: scaleX(0.5);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.nav-botao:hover {
+    color: #fff;
+}
+.nav-botao:hover::before,
+.onde-estamos::before {
+    opacity: 1;
+    transform: scaleX(1);
+}
+.hero{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(imagens/csgoCapa.webp);
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); 
+    transform: scale(1.1); 
+    z-index: -2;
+}
+.hero::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+.heroFoto{
+    height: 80vh;
+    width: 80vw;
+    background-image: url(imagens/csgoCapa.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+.heroTitulo{
+    color: white;
+    font-family: 'CS Regular', sans-serif;
+    font-size: 6rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.titulos{
+    font-family: 'JD Neos', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #19397f;
+}
+.introducaoCs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    background-color:  #171d27;
+}
+.introFoto{
+    background-image: url(imagens/introFoto.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.introTexto{
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textos{
+    font-family: 'JD Neos', sans-serif;
+    font-weight: 400;
+    color: #8f9fb4;
+    font-size: 1.5rem;
+}
