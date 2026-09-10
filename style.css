@@ -234,3 +234,14 @@ section{
     height: 40%;
     padding: 1rem;
 }
+.mercFoto::before{
+    background-image: url(imagens/merHeroFoto);
+    filter: blur(7px); 
+}
+.mercFoto{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 2rem;
+    padding-bottom: 4rem;
+}
