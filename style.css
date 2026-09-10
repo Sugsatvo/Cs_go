@@ -37,7 +37,6 @@ section{
     padding: 0 2rem;
     background: linear-gradient(to bottom, #3a4652, #23292f);
     border-bottom: 3px solid transparent;
-    border-image:#d98b3c;
     min-height: 3.2rem;
     width: 100vw;
 }
@@ -70,7 +69,7 @@ section{
     right: 0;
     bottom: 0;
     height: 3px;
-    background-color: #bf8f15;
+    background-color: #c66b11;
     opacity: 0;
     transform: scaleX(0.5);
     transition: opacity 0.25s ease, transform 0.25s ease;
@@ -145,10 +144,12 @@ section{
 }
 .introducaoCs{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap:wrap;
     gap: 2rem;
-    background-color:  #171d27;
+    padding: 2rem;
+    background-color: #171d27;
 }
 .introFoto{
     background-image: url(imagens/introFoto.jpg);
@@ -173,6 +174,7 @@ section{
     font-weight: 400;
     color: #8f9fb4;
     font-size: 1.75rem;
+    text-align: justify;
 }
 @view-transition{
     navigation: auto;
@@ -201,38 +203,34 @@ section{
     padding-bottom: 4rem;
 }
 .campHerofoto,
-.campHerofoto2 {
-    width: 40%;
-    height: 20%;
+.campHerofoto2{
+    width: 30%;
+    height: 30%;
     position: relative;
     overflow: hidden;
     background-image: none;
 }
-
-.campHerofoto::before,
-.campHerofoto2::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    filter: blur(4px);
-    transform: scale(1.1);
-    z-index: -1;
-}
-
-.campHerofoto::before{
-    background-image: url(imagens/campFoto1.jpg);
-}
-
-.campHerofoto2::before{
-    background-image: url(imagens/campFoto.avif);
-}
 .campTexto{
     font-size: 2rem;
     color: #f8f9fb;
+    padding: 1rem;
+}
+.campMajorsConteudo{
+    gap:1rem;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.astralis{
+    background-image: url(imagens/astralis.webp);
+    background-size: cover;
+    width: 40%;
+    height: 40%;
+}
+.as{
+    background-image: url(imagens/astralis2.webp);
+}
+.textoAstralis{
+    width: 40%;
+    height: 40%;
     padding: 1rem;
 }
