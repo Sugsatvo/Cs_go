@@ -205,9 +205,11 @@ section{
 .campHerofoto,
 .campHerofoto2{
     width: 30%;
-    height: 30%;
+    min-height: 30%;
+    height: auto;
     position: relative;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
     background-image: none;
 }
 .campTexto{
@@ -246,10 +248,10 @@ section{
     padding-bottom: 4rem;
 }
 .histFoto::before{
-    background-image: url(imagens/histFoto.jpg);
+    background-image: url(imagens/fundohistoria.jpg);
     filter: blur(7px);
 }
 .comuFoto::before{
-    background-image: url(imagens/comuFoto.jpg);
+    background-image: url(imagens/comunidadefundo.webp);
     filter: blur(7px);
 }
