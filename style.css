@@ -245,3 +245,11 @@ section{
     gap: 2rem;
     padding-bottom: 4rem;
 }
+.histFoto::before{
+    background-image: url(imagens/histFoto.jpg);
+    filter: blur(7px);
+}
+.comuFoto::before{
+    background-image: url(imagens/comuFoto.jpg);
+    filter: blur(7px);
+}
