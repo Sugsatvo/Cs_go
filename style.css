@@ -255,3 +255,59 @@ section{
     background-image: url(imagens/comunidadefundo.webp);
     filter: blur(7px);
 }
+.capa-titulo{
+    color: white;
+    font-family: 'CS Regular', sans-serif;
+    font-size: 6rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+.secao{
+    width: 100vw;
+}
+.footer{
+    background-color: #171d27;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    height: auto;
+    min-height: 100vh;
+}
+.titulo-footer{
+    font-size: 3.5rem;
+}
+.footer-conteudo,
+.referencias,
+.desenvolvido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+.subtitulo-footer{
+    color: #c66b11;
+    font-size: 2.3rem;
+    margin-bottom: 0.8rem;
+}
+.desenvolvedores-footer{
+    font-size: 1.6rem;
+}
+.referencias-texto{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 900px;
+}
+
+.projetoSecao{
+    height: auto;
+    min-height: 70vh;
+    padding: 6rem 4rem;
+}
+.textoProjeto{
+    font-size: 2.1rem;
+    line-height: 1.6;
+}
