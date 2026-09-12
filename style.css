@@ -318,10 +318,24 @@ section{
     flex-wrap: wrap;
     align-items:flex-start;
     width: 100%;
-    height: 70vh;
 }
 .histSecao{
     height: auto;
     min-height: 125vh;
     padding: 6rem 4rem;
+}
+.raridadeFoto{
+    background-image: url(imagens/raridadeFoto.webp);
+}
+.faca1{
+    background-image: url(imagens/faca1.jpg);
+}
+.faca2{
+    background-image: url(imagens/faca2.jpg);
+}
+.arma1{
+    background-image: url(imagens/arma1.webp);
+}
+.arma2{
+    background-image: url(imagens/arma2.jpg);
 }
