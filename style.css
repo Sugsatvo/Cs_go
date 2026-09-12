@@ -14,6 +14,9 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+body{
+    background-color: #171d27;
+}
 * {
     margin: 0;
     padding: 0;
@@ -176,12 +179,37 @@ section{
     font-size: 1.75rem;
     text-align: justify;
 }
+nav {
+    view-transition-name: navbar;
+}
+::view-transition-group(navbar),
+::view-transition-old(navbar),
+::view-transition-new(navbar) {
+    animation: none;
+    mix-blend-mode: normal;
+}
 @view-transition{
     navigation: auto;
 }
-
+@keyframes saindo {
+   to {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+@keyframes entrando {
+   from {
+        transform: translateY(-100%);
+    }
+}
 ::view-transition-group(*){
-    animation-duration: 1s
+    animation-duration: 2s
+}
+::view-transition-old(root){
+    animation-name: saindo;
+}
+::view-transition-new(root){
+    animation-name: entrando;
 }
 .campFoto::before{
     background-image: url(imagens/campFoto.jpeg);
